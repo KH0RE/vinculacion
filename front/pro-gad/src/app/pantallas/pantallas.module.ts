@@ -11,6 +11,7 @@ import { AutoridadComponent } from './autoridad/autoridad.component';
 import { TurismoComponent } from './turismo/turismo.component';
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
