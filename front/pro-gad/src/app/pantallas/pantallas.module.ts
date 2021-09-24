@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { AutoridadComponent } from './autoridad/autoridad.component';
 import { TurismoComponent } from './turismo/turismo.component';
+import { VisionComponent } from './vision/vision.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TurismoComponent } from './turismo/turismo.component';
     FooterComponent,
     ContactosComponent,
     AutoridadComponent,
-    TurismoComponent
+    TurismoComponent,
+    VisionComponent
   ],
   imports: [
     CommonModule,
