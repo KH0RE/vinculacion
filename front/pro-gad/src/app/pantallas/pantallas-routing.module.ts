@@ -5,6 +5,7 @@ import { ContactosComponent } from './contactos/contactos.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { HomeComponent } from './home/home.component';
 import { TurismoComponent } from './turismo/turismo.component';
+import { VisionComponent } from './vision/vision.component';
 
 const routes: Routes = [
 
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path : 'contactos',
     component : ContactosComponent
+  },
+  {
+    path : 'quienes-somos',
+    component : VisionComponent
   }
 ];
 
