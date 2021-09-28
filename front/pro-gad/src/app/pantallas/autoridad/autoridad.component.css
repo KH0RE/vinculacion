@@ -1,0 +1,68 @@
+/** about section **/
+
+.about {
+    background: #f3f4f7;
+    margin-top: 60px;
+    padding: 90px 0;
+}
+
+.about .titlepage {
+    text-align: left;
+    padding: 0;
+}
+
+.about .titlepage h2 {
+    color: rgb(17, 17, 17);
+    margin-bottom: 20px;
+}
+
+.about .titlepage p {
+    color: rgb(17, 17, 17);
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.about_text {
+    max-width: 539px;
+    width: 100%;
+    float: right;
+}
+
+.about_img {
+    max-width: 615px;
+    width: 100%;
+    float: left;
+}
+
+.about_img figure {
+    margin: 0;
+}
+
+.about_img figure img {
+    width: 100%;
+}
+.titlepage h2 {
+    font-size: 42px;
+}
+.choose_box {
+    padding-top: 0;
+}
+.cont h3 {
+    font-size: 38px;
+}
+.img_box figure {
+    margin: 0;
+}
+
+.img_box figure img {
+    width: 100%;
+}
+
+.page-section {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+  }
