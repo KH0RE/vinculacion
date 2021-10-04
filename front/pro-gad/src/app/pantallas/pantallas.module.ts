@@ -11,6 +11,11 @@ import { AutoridadComponent } from './autoridad/autoridad.component';
 import { TurismoComponent } from './turismo/turismo.component';
 import { VisionComponent } from './vision/vision.component';
 import { HeaderComponent } from './header/header.component';
+import { CivicosComponent } from './civicos/civicos.component';
+import { BarriosComponent } from './barrios/barrios.component';
+import { FiestasComponent } from './fiestas/fiestas.component';
+import { AdultoMayorComponent } from './adulto-mayor/adulto-mayor.component';
+import { TrabajosComponent } from './trabajos/trabajos.component';
 
 
 
@@ -24,7 +29,12 @@ import { HeaderComponent } from './header/header.component';
     AutoridadComponent,
     TurismoComponent,
     VisionComponent,
-    HeaderComponent
+    HeaderComponent,
+    CivicosComponent,
+    BarriosComponent,
+    FiestasComponent,
+    AdultoMayorComponent,
+    TrabajosComponent
   ],
   imports: [
     CommonModule,

@@ -1,81 +1,14 @@
-<!--<div class="menu">
-  <a class="navbar-brand ml-3" href="#">
-    <span class="">BootstrapCreative </span>
+
+
+<a class="navbar-brand "  >
+  <a class="navbar-brand"  style="color: rgb(7, 7, 7); font-family: Arial, Helvetica, sans-serif; font-weight: 700; "  (click)="home()">
+    <img href="https://www.facebook.com/GADPAloag/" src="../../../assets/facebook.png"
+    style="width: 40px; height: 40px; border-radius: 50%; " class="img-responsive">
+    GOBIERNO AUTÓNOMO DESCENTRALIZADO PARROQUIAL RURAL DE ALÓAG
   </a>
-  <nav style="  border-top: none;
-  border-left: none;
-  box-shadow: 0px 6px rgb(207, 207, 207);
-  background-color: rgb(9, 139, 122);
-  " class="navbar  navbar-expand-md navbar-light  fixed-top">
-
-    <div class="container">
-      <a class="navbar-brand" (click)="home()"><img src="../../../assets/logo.jpg"
-          style="width: 60px; height: 60px; border-radius: 50%;" class="img-responsive"></a>
-      <button class="navbar-toggler"  style="position: relative; left: 50%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"> </span>
-
-      </button>
-      <div class="col-5">
-
-      </div>
-      <div class="collapse navbar-collapse  " id="navbarSupportedContent"  >
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light  " aria-current="page"
-              style=" margin: 5px; border: none; " (click)="home()">Inicio</button>
-          </li>
-
-          <li class="nav-item">
-            <div class="dropdown">
-              <a class="btn btn-outline-light" role="button" id="dropdownMenuLink" style=" margin: 5px; border: none; "
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Quienes Somos
-                <i class="bi bi-caret-down-fill"></i>
-              </a>
-
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <button type="button" class="btn btn-outline-light "
-                  style=" margin: 5px; border: none;  color: black; overflow: hidden;"
-                  (click)="autoridades()">Autoridades</button>
-                  <br>
-                <button type="button" class="btn btn-outline-light "
-                  style=" margin: 5px; border: none;  color: black; overflow: hidden;" (click)="vision()">Sobre
-                  Nosotros</button>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light  " style=" margin: 5px; border: none; "
-              (click)="turismo()">Turismo</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light  " style=" margin: 5px; border: none; "
-              (click)="historia()">Historia</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light  " style=" margin: 5px; border: none; "
-              (click)="contactos()">Contactos</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </nav>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
--->
-
-<a class="navbar-brand ml-3" >
-  <a class="navbar-brand" (click)="home()"><img src="../../../assets/logo.jpg"
-    style="width: 60px; height: 60px; border-radius: 50%;" class="img-responsive"></a>
 </a>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<nav  style="background-color: #ffffff;" class="navbar navbar-expand-md navbar-light sticky-top">
 <!-- One of the primary actions on mobile is to call a business - This displays a phone button on mobile only -->
 <div class="navbar-toggler-right">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,45 +16,98 @@
           </button>
 </div>
 
+<div class="col-md-2"   >
+  <div class="imagen-menu">
+    <a (click)="home()" style="cursor: pointer;">
+      <img src="../../../assets/logo-menu.png"
+    style="width: 200px; height: 100px; " class="img-responsive">
+    </a>
+  </div>
 
+</div>
 
 
 <div class="collapse navbar-collapse flex-column " id="navbar">
 
-  <ul class="navbar-nav  w-100 justify-content-center px-3">
+  <ul class="navbar-nav  w-100  px-3">
     <li class="nav-item active">
       <button type="button" class="btn btn-outline-light  " aria-current="page"
-      style=" margin: 5px; border: none; " (click)="home()">Inicio</button>
+      style=" margin: 5px; border: none; color: rgb(0, 0, 0); " (click)="home()">Inicio</button>
     </li>
     <li class="nav-item dropdown">
       <div class="dropdown">
-        <a class="btn btn-outline-light" role="button" id="dropdownMenuLink" style=" margin: 5px; border: none; "
+        <a class="btn btn-outline-light" role="button" id="dropdownMenuLink" style="  color: rgb(0, 0, 0); margin: 5px; border: none; "
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Quienes Somos
+          Información Genereal
           <i class="bi bi-caret-down-fill"></i>
         </a>
 
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <button type="button" class="btn btn-outline-light "
-            style=" margin: 5px; border: none;  color: black; overflow: hidden;"
-            (click)="autoridades()">Autoridades</button>
-            <br>
+          style=" margin: 5px; border: none;  color: black; overflow: hidden;" (click)="vision()">Quienes Somos
+          </button>
+          <br>
           <button type="button" class="btn btn-outline-light "
-            style=" margin: 5px; border: none;  color: black; overflow: hidden;" (click)="vision()">Sobre
-            Nosotros</button>
+            style=" margin: 5px; border: none;  color: black; overflow: hidden;"
+            (click)="historia()">Historia</button>
+            <br>
+            <button type="button" (click)="civicos()"  class="btn btn-outline-light "
+            style=" margin: 5px; border: none;  color: black; overflow: hidden;"
+            >Simbolos Civicos</button>
+            <br>
+            <button type="button" (click)="barrios()" class="btn btn-outline-light "
+            style=" margin: 5px; border: none;  color: black; overflow: hidden;"
+            >Barrios</button>
+
+        </div>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <div class="dropdown">
+        <a class="btn btn-outline-light" role="button" id="dropdownMenuLink" style="color: rgb(0, 0, 0); margin: 5px; border: none; "
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Turismo
+          <i class="bi bi-caret-down-fill"></i>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <button type="button"  class="btn btn-outline-light "
+          style=" margin: 5px; border: none; color: black; overflow: hidden; font-size: small; font-weight: 500;" (click)="turismo()"
+          >Lugares Turisticos</button>
+
+          <br>
+          <button type="button" (click)="fiestas()" class="btn btn-outline-light "
+          style=" margin: 5px; border: none;  color: black; overflow: hidden;"
+          >Fiestas</button>
         </div>
       </div>
     </li>
     <li class="nav-item active">
-      <button type="button" class="btn btn-outline-light  " style=" margin: 5px; border: none; "
-      (click)="turismo()">Turismo</button>
+      <button type="button" class="btn btn-outline-light  " style="color: rgb(0, 0, 0); margin: 5px; border: none; "
+      (click)="autoridades()" >Organigrama Institucional</button>
+    </li>
+    <li class="nav-item dropdown">
+      <div class="dropdown">
+        <a class="btn btn-outline-light" role="button" id="dropdownMenuLink" style="color: rgb(0, 0, 0); margin: 5px; border: none; "
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Proyectos
+          <i class="bi bi-caret-down-fill"></i>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <button type="button" (click)="mayor()" class="btn btn-outline-light "
+          style=" margin: 5px; border: none;  color: black; overflow: hidden;"
+          >Adulto Mayor</button>
+          <br>
+        </div>
+      </div>
     </li>
     <li class="nav-item active">
-      <button type="button" class="btn btn-outline-light  " style=" margin: 5px; border: none; "
-      (click)="historia()">Historia</button>
+      <button type="button" (click)="trabajos()" class="btn btn-outline-light  " style=" color: rgb(0, 0, 0);margin: 5px; border: none; "
+    >Trabajos</button>
     </li>
     <li class="nav-item active">
-      <button type="button" class="btn btn-outline-light  " style=" margin: 5px; border: none; "
+      <button type="button" class="btn btn-outline-light  " style="color: rgb(0, 0, 0); margin: 5px; border: none; "
       (click)="contactos()">Contactos</button>
     </li>
   </ul>

@@ -32,5 +32,20 @@ export class MenuComponent implements OnInit {
   vision(){
     this.router.navigate(['gad/quienes-somos'])
   }
+  mayor(){
+    this.router.navigate(['gad/adulto-mayor'])
+  }
+  barrios(){
+    this.router.navigate(['gad/barrios'])
+  }
+  civicos(){
+    this.router.navigate(['gad/simbolos-civicos'])
+  }
+  fiestas(){
+    this.router.navigate(['gad/fiestas'])
+  }
+  trabajos(){
+    this.router.navigate(['gad/trabajos'])
+  }
 
 }
