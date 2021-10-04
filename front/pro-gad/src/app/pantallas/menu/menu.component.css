@@ -7,6 +7,12 @@
   border-radius:0;
  }
 
+ .navbar-brand  {
+   cursor: pointer;
+   margin-left: 2%;
+ }
+
+
 
 /* Medium devices (tablets, 768px and up)
 The navbar toggle appears at this breakpoint */
@@ -15,5 +21,27 @@ The navbar toggle appears at this breakpoint */
     display: block;
     margin-top: 0;
   border-radius:0;
+
  }
+
+
 }
+
+
+
+@media (max-width: 1024px) {
+  .navbar-brand    {
+    font-size: 65%;
+    font-weight: 700;
+    width: 2%;
+    top: 30%;
+
+
+  }
+  .imagen-menu {
+   display: none;
+   z-index: 0;
+  }
+
+/**/
+ }
