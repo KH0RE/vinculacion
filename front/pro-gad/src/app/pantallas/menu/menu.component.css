@@ -31,11 +31,11 @@ The navbar toggle appears at this breakpoint */
 
 @media (max-width: 1024px) {
   .navbar-brand    {
-    font-size: 65%;
+    /*font-size: 65%;
     font-weight: 700;
     width: 2%;
-    top: 30%;
-
+    top: 30%;*/
+    display: none;
 
   }
   .imagen-menu {
