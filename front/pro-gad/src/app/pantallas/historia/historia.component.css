@@ -1,3 +1,8 @@
+p {
+  font-family: Montserrat, sans-serif;
+  font-size: 110%;
+}
+
 .frame {
 	text-align: center;
 	position: relative;
@@ -30,18 +35,44 @@
 
 }
 
-.titulo {
+.titulo1 {
   position: relative;
-  top: 10%;
+  align-items: center;
+  font-size: 230%;
+}
+
+.titulo2 {
+  position: relative;
+  align-items: center;
+  font-size: 230%;
+}
+
+.titulo3 {
+  position: relative;
+  align-items: center;
+  font-size: 150%;
 }
 
 
 @media (max-width: 1024px) {
-  .titulo {
+  .titulo1 {
     font-size: medium;
     text-align: center;
     position: relative;
     top: 30%;
   }
+  .titulo2 {
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    top: 30%;
+  }
+  .titulo3 {
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    top: 30%;
+  }
+
  }
 
