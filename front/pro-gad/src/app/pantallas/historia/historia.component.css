@@ -3,6 +3,7 @@ p {
   font-size: 110%;
 }
 
+
 .frame {
 	text-align: center;
 	position: relative;
@@ -56,10 +57,10 @@ p {
 
 @media (max-width: 1024px) {
   .titulo1 {
-    font-size: medium;
+    font-size: 25px;
     text-align: center;
     position: relative;
-    top: 30%;
+    margin-top: 20px;
   }
   .titulo2 {
     font-size: medium;
@@ -68,11 +69,13 @@ p {
     top: 30%;
   }
   .titulo3 {
-    font-size: medium;
+    font-size: 20px;
     text-align: center;
     position: relative;
-    top: 30%;
+    margin-top: 20px;
   }
+
+
 
  }
 
