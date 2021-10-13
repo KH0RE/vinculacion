@@ -7,3 +7,10 @@
 img{
     height: 320px;
 }
+.we-btn-collapse{
+    background: none;
+    border: 0px;
+}
+.we-btn-collapse:hover{
+    text-decoration: underline;
+}
