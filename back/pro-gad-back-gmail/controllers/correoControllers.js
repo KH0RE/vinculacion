@@ -21,9 +21,13 @@ const envioCorreo = (req = request, res = response) => {
             address : 'pwebaloag@gmail.com'
         }],
         subject : body.asunto,
-        to : 'davidquinaluisa96@gmail.com',
+        cc : [ 
+            body.email,
+            'pwebaloag@gmail.com'
+        ], 
         text : body.mensaje,
-        sender : body.email
+        
+      
       
    
     };
