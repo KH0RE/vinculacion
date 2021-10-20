@@ -21,15 +21,19 @@ const envioCorreo = (req = request, res = response) => {
             address : 'pwebaloag@gmail.com'
         }],
         subject : body.asunto,
-        cc : [ 
+        cc : [  
             body.email,
             'pwebaloag@gmail.com'
         ], 
-        text : body.mensaje,
-        
+      
+        text : body.mensaje + 
+               ' ' +
+               ' "......Gracias por Contactarnos pronto te estaremos dando una respuesta"' ,
+       
+    
       
       
-   
+    
     };
 
     config.sendMail(opciones, function(error, result ){
