@@ -1,80 +1,85 @@
 <app-menu></app-menu>
 
 <div class="album py-5 bg-light">
-    <div class="container">
+  <div class="container">
+    <h3 class="card-title">Fiestas</h3>
+    <!-- Fiesta número 1 -->
+    <div class="row row-cols-1 row-cols-sm-2 g-2">
 
-        <div class="row row-cols-1 row-cols-sm-2 g-2">
-
-            <div class="col">
-                <h3 class="card-title">Fiestas</h3>
-                <ul>
-                    <li >
-                      <button class="we-btn-collapse" data-bs-toggle="collapse" data-bs-target="#fiesta1">
-                        Fiestas del Señor del Casanto (15 de febrero)
-                      </button>
-                      <div class="collapse" id="fiesta1">
-                        <ul>
-                          <li> Esta es una escultura tallada en un árbol de Casanto y según varias versiones tiene más de
-                            250 años de antigüedad. Se encuentra resguardada en el atrio de la Iglesia Nuestra Señora de
-                            Asunción de Alóag.</li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                        <button class="we-btn-collapse" data-bs-toggle="collapse" data-bs-target="#fiesta2">
-                            Fiestas Nuestra Señora de la Asunción (15 de agosto)
-                        </button>
-                        <div class="collapse" id="fiesta2">
-                          <ul>
-                           <!-- Para más información -->
-                          </ul>
-                        </div>
-                      </li>
-                      <li>
-                        <button class="we-btn-collapse" data-bs-toggle="collapse" data-bs-target="#fiesta3">
-                            Fiestas de Parroquialización  (8 Septiembre)
-                        </button>
-                        <div class="collapse" id="fiesta3">
-                          <ul>
-                            <!-- Para más información -->
-                          </ul>
-                        </div>
-                      </li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <div id="carousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block" src="../../../assets/Fiestas/F1.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="../../../assets/Fiestas/F2.png" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="../../../assets/Fiestas/F3.png" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
-                </div>
-
-            </div>
+      <div class="col">
+        <div>
+          <h4>
+            Fiestas del Señor del Casanto (15 de febrero)
+          </h4>
+          <p class="text-justify">Esta es una escultura tallada en un árbol de Casanto y según varias versiones tiene más de
+            250 años de antigüedad. Se encuentra resguardada en el atrio de la Iglesia Nuestra Señora de
+            Asunción de Alóag</p>
         </div>
+      </div>
 
+      <div class="col imgf1" style="text-align: center;">
+          <img class="" src="../../../assets/Fiestas/F1.png" alt="First slide">
+      </div>
     </div>
+    <hr />
+
+    <!-- Fiesta número 2 -->
+    <div class="row row-cols-1 row-cols-sm-2 g-2">
+
+      <div class="col">
+        <div>
+          <h4>Fiestas Nuestra Señora de la Asunción (15 de agosto)</h4>
+
+        </div>
+      </div>
+
+      <div class="col">
+        <img class="d-block w-100" src="../../../assets/Fiestas/F2.png" alt="Second slide">
+      </div>
+    </div>
+    <hr />
+
+    <!-- Fiesta número 3 -->
+    <div class="row row-cols-1 row-cols-sm-2 g-2">
+
+      <div class="col">
+        <div>
+          <h4>Fiestas de Parroquialización (8 Septiembre)</h4>
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="../../../assets/Fiestas/F3.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../../../assets/Fiestas/F4.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../../../assets/Fiestas/F5.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <app-header></app-header>
