@@ -77,32 +77,32 @@
                         box-shadow: 10px 12px 15px rgb(156, 156, 156); ">
         <h2 style="text-align: center; margin: 10px; position: relative; top: 10px; color: #0D924A;" >Formulario de Contacto</h2>
         <br>
-        <form>
+        <form  >
           <div class="form-group">
             <div class="row" style="margin: 15px; padding-top: 15px;">
 
-                <div class="col-6">
+               <!-- <div class="col-6">
                   <label for="" style="font-weight: 600; color: #0D924A" >Nombres :</label>
-                  <input type="text" class=" form-control "  style="border-top: none; border-left: none; border-right: none; "
+                  <input type="text"  class=" form-control "  style="border-top: none; border-left: none; border-right: none; "
                   placeholder="Escriba su Nombre">
                   <br>
                 </div>
                 <div class="col-6">
                   <label for=""  style="font-weight: 600; color: #0D924A"  >Apellidos :</label>
-                  <input type="text" class=" form-control " style="border-top: none; border-left: none; border-right: none; " placeholder="Escriba su Apellido">
+                  <input type="text"  class=" form-control " style="border-top: none; border-left: none; border-right: none; " placeholder="Escriba su Apellido">
                   <br>
                 </div>
-
+                -->
 
 
                 <div class="col-6">
-                  <label for=""  style="font-weight: 600; color: #0D924A"  >Email :</label>
-                  <input type="text" class=" form-control " style="border-top: none; border-left: none; border-right: none; " placeholder="Escriba su Email">
+                  <label for=""   style="font-weight: 600; color: #0D924A"  >Email :</label>
+                  <input type="text"   [ngModelOptions]="{standalone: true}" [(ngModel)]="email" class=" form-control " style="border-top: none; border-left: none; border-right: none; " placeholder="Escriba su Email">
                   <br>
                 </div>
                 <div class="col-6">
-                  <label for=""  style="font-weight: 600; color: #0D924A"  > Telefono :</label>
-                  <input type="text" class=" form-control " style="border-top: none; border-left: none; border-right: none; "  placeholder="Escriba su Telefono">
+                  <label for=""  style="font-weight: 600; color: #0D924A"  > Asunto :</label>
+                  <input type="text"  [ngModelOptions]="{standalone: true}" [(ngModel)]="asunto" class=" form-control " style="border-top: none; border-left: none; border-right: none; "  placeholder="Escriba el Asunto">
                   <br>
                 </div>
 
@@ -110,14 +110,16 @@
 
 
               <div class="col-12">
-                <label  style="font-weight: 600; color: #0D924A"  >Asunto :</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <label  style="font-weight: 600; color: #0D924A"  >Mensaje :</label>
+                <textarea  placeholder="Escribe el mensaje..." [ngModelOptions]="{standalone: true}" [(ngModel)]="mensaje" class="form-control" rows="3"></textarea>
               </div>
             </div>
 
 
 
-            <button type="submit" style="position: relative; left: 45%;" class="btn btn-outline-success "> Enviar
+            <button type="submit" style="position: relative; left: 45%;"
+              (click)="send()"
+            class="btn btn-outline-success "> Enviar
             </button>
           </div>
 
@@ -125,6 +127,21 @@
 
 
         </form>
+      </div>
+
+     <div *ngIf="alert"  id="alert" class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Acción Realizada con Éxito </strong> <br> {{ msg }}
+        <img src="../../../assets/creado.gif"  style="width: 10%; height: 10%; position: relative; left: 10%;" alt="">
+
+
+        <a href="gad/contactos" id="boton" class="btn btn-success">Continuar </a>
+      </div>
+
+      <div *ngIf="error"  id="alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Llene todos los campos </strong> <br> {{ msgError }}
+        <img src="../../../assets/error.gif"  style="width: 10%; height: 10%; position: relative; left: 10%;" alt="">
+
+        <a href="gad/contactos" id="boton" class="btn btn-danger">Continuar </a>
       </div>
 
     </div>

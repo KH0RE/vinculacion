@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { HttpClientModule } from '@angular/common/http';
+
+import { FormsModule,  ReactiveFormsModule  } from "@angular/forms";
+
 import { PantallasRoutingModule } from './pantallas-routing.module';
 import { HomeComponent } from './home/home.component';
 import { HistoriaComponent } from './historia/historia.component';
@@ -38,7 +42,10 @@ import { TrabajosComponent } from './trabajos/trabajos.component';
   ],
   imports: [
     CommonModule,
-    PantallasRoutingModule
+    PantallasRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PantallasModule { }
