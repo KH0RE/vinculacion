@@ -10,6 +10,7 @@ const envioCorreo = (req = request, res = response) => {
         host : 'smtp.gmail.com',
         post : 587,
         auth : {
+            /* Correo del GAD EJEMPLO */
             user : 'pwebaloag@gmail.com',
             pass : 'carlOs12345'
         }
@@ -20,9 +21,9 @@ const envioCorreo = (req = request, res = response) => {
             name : 'Web Aloag - Correo',
             address : 'pwebaloag@gmail.com'
         }],
-        subject : body.asunto,
+        subject : body.asunto, /* TEMA A TRATAR EJEMPLO */
         cc : [  
-            body.email,
+            body.email, /* CORREO DEl USUARIO */
             'pwebaloag@gmail.com'
         ], 
       
