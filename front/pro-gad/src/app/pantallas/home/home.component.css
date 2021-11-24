@@ -159,7 +159,14 @@
   border-radius: 10px;
 }
 
+.card-img-top{
+  height: 450px;
+  
+}
 
+#uno{
+  height: 300px;
+}
 
 .gallery-container{
   width: 80%;
