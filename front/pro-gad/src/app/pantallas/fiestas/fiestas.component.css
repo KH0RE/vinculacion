@@ -1,21 +1,9 @@
-
-h4, p{
-    font-size: x-large;
-}
-
 .row{
-    padding: 10px;
-    box-shadow: 0px 5px 8px -4px black;
+    border-radius: 1em;
 }
-
 img{
-    height: 320px;
-}
-.we-btn-collapse{
-    background: none;
-    border: 0px;
-}
-.we-btn-collapse:hover{
-    text-decoration: underline;
+    border-radius: 1em 0em 1em;
+    width: 400px;
+    height: 270px;
 }
 
